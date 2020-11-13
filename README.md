@@ -16,7 +16,8 @@ modeling approaches.
 
 I tuned two types of classification models using either all predictors or a subset of the data that had near-zero
 variance and highly correlated predictors removed. This phase included using the predictive
-classification methods like K-means clustering algorithms, logistic regression analysis, or
-classification analysis such as decision trees to classify the population in no risk categories and
+classification methods like **K-means clustering algorithms, logistic regression analysis, or
+classification analysis such as decision trees, Naïve Bayes Gaussian NB and Logistic Regression** to classify the population in no risk categories and
 at risk categories considering data of each individual such as low credit score, family income as
-variables of the model, credit card balance, previous applications.
+variables of the model, credit card balance, previous applications. I also used **H2O Generalized Linear Estimator for achieving the best accuracy for the last model**
+

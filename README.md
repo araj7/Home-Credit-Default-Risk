@@ -1,6 +1,6 @@
 # Home-Credit-Default-Risk
-The main goal of our project is to classify and predict the number of clients that can receive a
-loan. We classified people as clients who are to be granted a loan, and the ones who the
+The goal of this project is to classify and predict the number of clients that can receive a 
+loan. I classified people as clients who are to be granted a loan, and the ones who the
 business would not lend to. This highlights the reliability or credibility of an applicant for
 repayment of the loan and whether they can pay.
 The problem in particular strikes as challenging to solve since this business works in an unusual

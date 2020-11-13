@@ -19,5 +19,5 @@ variance and highly correlated predictors removed. This phase included using the
 clustering models like **K-means and logistic regression analysis**, and
 classification models such as **decision trees, Naïve Bayes Gaussian NB and Logistic Regression** to classify the population in no risk categories and
 at risk categories considering data of each individual such as low credit score, family income as
-variables of the model, credit card balance, previous applications. I also used **H2O Generalized Linear Estimator** for achieving the best accuracy for the last model
+variables of the model, credit card balance, previous applications. I also used **H2O Generalized Linear Estimator** for achieving the best accuracy for the last model.
 

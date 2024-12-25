@@ -1,23 +1,81 @@
-# Home-Credit-Default-Risk
-The goal of this project is to classify and predict the number of clients that can receive a 
-loan. I classified people as clients who are to be granted a loan, and the ones who the
-business would not lend to. This highlights the reliability or credibility of an applicant for
-repayment of the loan and whether they can pay.
+# Home Credit Default Risk
 
-The problem in particular strikes as challenging to solve since this business works in an unusual
-scenario where loans are to be granted to people that other banks would normally not consider,
-given the low to zero credit score. Since their business model is focused upon granting loans to
-individuals that other banks would demonstrably refuse, they are at a significantly higher
-financial risk. As a result, the business would save by mitigating at-risk clients while yielding
-profits by making use of the methods on the dataset to solve the issue at the highest possible
-accuracy, comparatively more than they would gain without using the models.
-Next, the data was cleaned and pre-processed in ways that made it suitable for use in various
-modeling approaches.
+## Project Overview
+This project aims to classify and predict the likelihood of clients successfully repaying loans. The primary objective is to assess and determine the reliability or creditworthiness of applicants for loan repayment, distinguishing between clients to whom loans can be safely granted and those who pose a financial risk to the business.
 
-I tuned two types of classification models using either all predictors or a subset of the data that had near-zero
-variance and highly correlated predictors removed. This phase included using the predictive
-clustering models like **K-means and logistic regression analysis**, and
-classification models such as **decision trees, Naïve Bayes Gaussian NB and Logistic Regression** to classify the population in no risk categories and
-at risk categories considering data of each individual such as low credit score, family income as
-variables of the model, credit card balance, previous applications. I also used **H2O Generalized Linear Estimator** for achieving the best accuracy for the last model.
+## Challenge Statement
+The problem is particularly challenging due to the unique business model: granting loans to individuals with low or no credit scores—applicants whom traditional banks would typically reject. While this approach opens opportunities to underserved populations, it also exposes the business to higher financial risk. 
+
+By leveraging advanced predictive modeling techniques, this project seeks to mitigate risk by identifying at-risk clients, enabling the business to maximize profits and optimize lending decisions.
+
+## Data Preparation
+To ensure robust and reliable predictions, the dataset underwent comprehensive cleaning and preprocessing, including:
+- Handling missing values.
+- Removing near-zero variance predictors.
+- Addressing multicollinearity by eliminating highly correlated predictors.
+- Feature engineering to extract meaningful insights from raw data.
+
+Key variables include:
+- Credit score.
+- Family income.
+- Credit card balances.
+- Previous loan application history.
+
+## Modeling Approach
+A variety of classification models were developed and fine-tuned to achieve the best accuracy. These models include:
+
+### Predictive Clustering Models
+- **K-Means Clustering:** Grouped applicants based on similarities to uncover patterns in repayment behavior.
+
+### Classification Models
+- **Logistic Regression:** Employed to estimate probabilities of loan repayment.
+- **Decision Trees:** Provided an interpretable model for identifying high-risk applicants.
+- **Naïve Bayes (Gaussian NB):** Evaluated for its efficiency on categorical and numerical variables.
+
+### Advanced Models
+- **H2O Generalized Linear Estimator:** Utilized for optimizing prediction accuracy, offering scalable and high-performance results.
+
+## Results
+The models effectively categorized clients into low-risk and high-risk groups. Among the tested approaches, the H2O Generalized Linear Estimator delivered the highest accuracy, providing actionable insights for the lending strategy.
+
+## Conclusion
+This project demonstrates the power of predictive analytics in addressing real-world financial challenges. By employing machine learning techniques, the business can make informed decisions, reducing financial risk and improving profitability while supporting underserved communities.
+
+---
+
+### Repository Structure
+- `data/`: Raw and processed data files.
+- `notebooks/`: Jupyter notebooks detailing data exploration, preprocessing, and modeling.
+- `scripts/`: Python scripts for data preparation and model training.
+- `reports/`: Visualization and model performance reports.
+
+### How to Use
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/Home-Credit-Default-Risk.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd Home-Credit-Default-Risk
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the analysis notebook:
+   ```bash
+   jupyter notebook notebooks/analysis.ipynb
+   ```
+
+### Technologies Used
+- Python (pandas, scikit-learn, H2O.ai)
+- Jupyter Notebook
+- H2O Generalized Linear Estimator
+- Data visualization tools (Matplotlib, Seaborn)
+
+---
+
+### Acknowledgments
+Special thanks to the open-source community and datasets that made this analysis possible.
+
 
